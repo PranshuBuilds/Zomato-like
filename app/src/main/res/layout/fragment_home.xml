@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linear"
+        android:gravity="center"
+        android:elevation="4dp"
+        android:padding="5dp"
+        android:layout_margin="4dp"
+        android:background="@drawable/background_round"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:padding="5dp"
+            android:layout_height="40dp"
+            android:src="@drawable/home" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:text="Home"
+            android:fontFamily="@font/dishes"
+            android:textSize="20dp"
+            android:layout_weight="1"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SEARCH"
+            android:gravity="center"
+            android:paddingEnd="8dp"
+            android:paddingStart="2dp"
+            android:textSize="15dp"
+            android:textColor="#fff"
+            android:background="@drawable/round_red"
+            android:drawableStart="@drawable/ic_baseline_search_24"/>
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="50dp"
+            android:padding="5dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/user"
+            android:layout_height="40dp"
+            app:civ_border_color="#FF000000"
+            />
+
+
+    </LinearLayout>
+
+<!--    <com.google.android.material.appbar.AppBarLayout-->
+<!--        android:id="@+id/appBar"-->
+<!--        app:elevation="0dp"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_margin="4dp"-->
+<!--        android:background="@android:color/transparent">-->
+<!--        <androidx.appcompat.widget.Toolbar-->
+<!--            android:id="@+id/toolbar"-->
+
+<!--            android:elevation="4dp"-->
+<!--            app:popupTheme="@style/AppTheme"-->
+<!--            android:theme="@style/AppTheme"-->
+<!--            android:background="@drawable/background_round"-->
+<!--            app:titleTextColor="#fff"-->
+<!--            app:title="Recipes"-->
+<!--            android:layout_margin="1dp"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--             />-->
+<!--    </com.google.android.material.appbar.AppBarLayout>-->
+
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_below="@id/linear"
+
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="Your Mood Today"
+            android:layout_margin="5dp"
+            android:textColor="#F31717"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:background="@drawable/pasta"
+                app:cardCornerRadius="10dp">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/pasta"
+                    android:scaleType="centerCrop"/>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:background="@drawable/pasta"
+                app:cardCornerRadius="10dp">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/egg"
+                    android:scaleType="centerCrop"/>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:background="@drawable/chicken"
+                app:cardCornerRadius="10dp">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/chicken"
+                    android:scaleType="centerCrop"/>
+            </androidx.cardview.widget.CardView>
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:background="@drawable/pasta"
+                app:cardCornerRadius="10dp">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/rice"
+                    android:scaleType="centerCrop"/>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:background="@drawable/pasta"
+                app:cardCornerRadius="10dp">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/dosa"
+                    android:scaleType="centerCrop"/>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:background="@drawable/chicken"
+                app:cardCornerRadius="10dp">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/salad"
+                    android:scaleType="centerCrop"/>
+            </androidx.cardview.widget.CardView>
+
+
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="Open Restaurants"
+            android:layout_margin="5dp"
+            android:textColor="#F31717"/>
+
+
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:overScrollMode="never"
+        android:layout_height="match_parent"
+        android:layout_below="@id/ll"
+        android:padding="3dp"
+        android:id="@+id/dish"/>
+</RelativeLayout>

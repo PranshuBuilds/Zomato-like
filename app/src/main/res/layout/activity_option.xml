@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".OptionActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:scaleType="centerCrop"
+        android:layout_height="151dp"
+        android:src="#B7F7F7F7"
+        tools:background="@drawable/diff_dish"
+         />
+
+
+
+    <TextView
+        android:id="@+id/main"
+        android:textSize="20dp"
+        android:fontFamily="@font/dishes"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        android:background="#B7F7F7F7"
+
+        android:layout_width="match_parent"
+        android:textColor="#000"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        tools:layout_editor_absoluteX="155dp"
+        tools:layout_editor_absoluteY="238dp" />
+
+    <TextView
+        android:id="@+id/disc"
+        android:gravity="center"
+        android:textColor="#000"
+
+        android:background="#B7F7F7F7"
+        android:layout_below="@id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        tools:layout_editor_absoluteX="161dp"
+        tools:layout_editor_absoluteY="308dp" />
+</RelativeLayout>
